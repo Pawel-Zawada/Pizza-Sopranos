@@ -10,6 +10,14 @@
 <body>
 <!--== start body ==-->
 
+<!-- start header -->
+<div class="header">
+	<img src="img/pizzalogo.png">
+</div>
+<!-- end header -->
+
+<div class="border"></div>
+
 <!-- start navbar div -->
 <div class="navbar">
 <ul>
@@ -22,7 +30,7 @@
 
 <!-- start content div -->
 <div class="content">
-	<p>This is a testing text</p>
+
 </div>
 <!-- end content div -->
 
