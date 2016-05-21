@@ -6,9 +6,6 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 ** box-shadow - hover **
 box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
-** transition premade **
-transition: background-color box-shadow 0.2s ease-in-out;
-
 */
 
 * {
@@ -16,19 +13,185 @@ transition: background-color box-shadow 0.2s ease-in-out;
 	margin: 0;
 }
 
-.header {
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 5px;
+body {
+	font-family: Italiana;
+}
+
+img {
+	padding-top: 5px;
+	margin: auto;
+	display: block;
+}
+h1 {
 	text-align: center;
+	display: block;
 }
 
-.header img {
-	max-width: 100%;
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
 }
 
-.border {
-	margin-left: 10%;
-	margin-right: 10%;
-	border-bottom: solid 3px black;
+.navbar ul li {
+	float: left;
+}
+
+.navbar ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	width: 4em;
+	transition: all 0.2s ease-in-out;
+}
+
+.navbar ul li a:hover {
+	background-color: red;
+}
+
+
+/* Food menu's */
+.pizzadiv {
+	font-size:1.8em;
+	width: 80%;
+	margin: auto;
+	margin-top: 1em;
+	display: none;
+}
+
+.pizzadiv ul {
+	list-style: none;
+}
+
+.pizzadiv li {
+	margin: 5px;
+	background-color: white;
+}
+
+.pizzadiv ul li {
+	float: left;
+	padding: 1em;
+	border: 1px solid grey;
+	width: 10em;
+	height: auto;
+}
+
+.pizzadiv ul li form img {
+	display: block;
+}
+
+.pizzadiv img {
+	display: block;
+	margin: auto;
+	height: 280px;
+	width: 280px;
+	background-color: white;
+}
+
+.pizzadiv label {
+	font-size: 0.8em;
+}
+
+.selected {
+	background-color: grey;
+}
+
+
+
+/* Secondary navbar for food menu */
+.menubar {
+	border-top: 1px solid white;
+	position: fixed;
+	display: none;
+}
+
+.menubar ul	{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.menubar li:last-child {
+	border-top: white 1px solid;
+}
+
+.menubar ul li a {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	width: 4em;
+	height: auto;
+	transition: all 0.2s ease-in-out;
+	display: block;
+}
+
+.menubar ul li label {
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	width: 4em;
+	height: auto;
+	transition: all 0.2s ease-in-out;
+	display: block;
+}
+
+
+.menubar span {
+	border-top: white solid 1px;
+}
+/* Makes nav splitter */
+
+
+/* Custom styled select */
+.select-style {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #fff;
+	width: 20%;
+}
+
+.select-style select {
+	padding: 5px 8px;
+	width: 10%;
+	border: none;
+	box-shadow: none;
+	background-color: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.select-style select:focus {
+	outline: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.rand img {
+	width: 300px;
+	height: auto;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+	color: red;
 }
